@@ -1,26 +1,16 @@
-package Assignment;
+package CircleSquareTriangle;
 
 public class Square {
-	 private double side;
-	    public Square(double side) {
-	        this.side = side;
-	    }
-	    public double calculateArea() {
-	        return side * side;
-	    }
+	private int sides;
 
-	    public double calculatePerimeter() {
-	        return 4 * side;
-	    }
-	
-	public class Main {
-	    public static void main(String[] args) {
-	        Square square = new Square(5);
-	        double area = square.calculateArea();
-	        double perimeter = square.calculatePerimeter();
-	        System.out.println("Area: " + area);
-	        System.out.println("Perimeter: " + perimeter);
-	    }
-	}
+    public Square(int sides) {
+        this.sides = sides;
+    }
+
+    public int calculateArea() {
+        int area = sides * sides;
+        System.out.println("The area of the square is: " + area);
+        return area;
+    }
 
 }
